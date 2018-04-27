@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-test
-</body>
-</html>
+{{extend './layout.html'}}
+
+{{block 'title'}}{{title}}{{/block}}
+
+{{block 'head'}}
+<link rel="stylesheet" href="custom.css">
+{{/block}}
+
+{{block 'content'}}
+<p>This is just an awesome page.</p>
+{{/block}}
